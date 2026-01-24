@@ -37,4 +37,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Troubleshooting guide
 - API documentation for all nodes
 
-[0.1.0]: https://github.com/trilox/n8n-nodes-trilox/releases/tag/v0.1.0
+[0.1.0]: https://github.com/Trilox-io/n8n-nodes-trilox/releases/tag/v0.1.0

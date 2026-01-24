@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trilox/n8n-nodes-trilox.git"
+    "url": "git+https://github.com/Trilox-io/n8n-nodes-trilox.git"
   },
   "bugs": {
-    "url": "https://github.com/trilox/n8n-nodes-trilox/issues"
+    "url": "https://github.com/Trilox-io/n8n-nodes-trilox/issues"
   },
   "main": "dist/index.js",
   "scripts": {

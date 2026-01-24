@@ -336,8 +336,8 @@ All nodes support n8n's **Continue On Fail** option:
 
 ## Support
 
-- **Documentation**: [https://github.com/trilox/n8n-nodes-trilox#readme](https://github.com/trilox/n8n-nodes-trilox#readme)
-- **GitHub Issues**: [https://github.com/trilox/n8n-nodes-trilox/issues](https://github.com/trilox/n8n-nodes-trilox/issues)
+- **Documentation**: [https://github.com/Trilox-io/n8n-nodes-trilox#readme](https://github.com/Trilox-io/n8n-nodes-trilox#readme)
+- **GitHub Issues**: [https://github.com/Trilox-io/n8n-nodes-trilox/issues](https://github.com/Trilox-io/n8n-nodes-trilox/issues)
 - **Email**: support@trilox.io
 
 ## License

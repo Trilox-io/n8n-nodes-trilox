@@ -8,7 +8,7 @@ import {
 export class TriloxApi implements ICredentialType {
 	name = 'triloxApi';
 	displayName = 'Trilox API';
-	documentationUrl = 'https://github.com/trilox/n8n-nodes-trilox#readme';
+	documentationUrl = 'https://github.com/Trilox-io/n8n-nodes-trilox#readme';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',

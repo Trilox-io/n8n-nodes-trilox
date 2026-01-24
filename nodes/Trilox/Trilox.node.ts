@@ -59,7 +59,7 @@ export class Trilox implements INodeType {
 			resources: {
 				primaryDocumentation: [
 					{
-						url: 'https://github.com/trilox/n8n-nodes-trilox#readme',
+						url: 'https://github.com/Trilox-io/n8n-nodes-trilox#readme',
 					},
 				],
 			},
