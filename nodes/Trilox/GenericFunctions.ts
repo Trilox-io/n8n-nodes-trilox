@@ -4,7 +4,7 @@ import type {
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
-	IRequestOptions,
+	IHttpRequestOptions,
 } from 'n8n-workflow';
 
 export async function triloxApiRequest(
@@ -17,7 +17,7 @@ export async function triloxApiRequest(
 	const credentials = await this.getCredentials('triloxApi');
 	const baseUrl = credentials.baseUrl as string;
 
-	const options: IRequestOptions = {
+	const options: IHttpRequestOptions = {
 		method,
 		url: `${baseUrl}${endpoint}`,
 		headers: {
@@ -30,7 +30,7 @@ export async function triloxApiRequest(
 	};
 
 	try {
-		return await this.helpers.request(options);
+		return await this.helpers.httpRequest(options);
 	} catch (error) {
 		throw error;
 	}
@@ -44,7 +44,7 @@ export async function triloxWebhookRequest(
 	const credentials = await this.getCredentials('triloxApi');
 	const baseUrl = credentials.baseUrl as string;
 
-	const options: IRequestOptions = {
+	const options: IHttpRequestOptions = {
 		method: 'POST',
 		url: `${baseUrl}/api/webhooks/${appKey}/message`,
 		body,
@@ -52,7 +52,7 @@ export async function triloxWebhookRequest(
 	};
 
 	try {
-		return await this.helpers.request(options);
+		return await this.helpers.httpRequest(options);
 	} catch (error) {
 		throw error;
 	}
