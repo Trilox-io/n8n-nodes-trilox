@@ -1,0 +1,74 @@
+{
+  "name": "n8n-nodes-trilox",
+  "version": "0.1.0",
+  "description": "n8n community nodes for Trilox - The first n8n chatbot inbox with human takeover. Monitor conversations, take control from bots, and reply as a human.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "trilox",
+    "customer support",
+    "chat",
+    "handover",
+    "automation",
+    "chatbot",
+    "conversations",
+    "whatsapp",
+    "ai",
+    "human-in-the-loop",
+    "customer service",
+    "escalation",
+    "webhook",
+    "conversational-ai"
+  ],
+  "license": "MIT",
+  "homepage": "https://trilox.io",
+  "author": {
+    "name": "Trilox",
+    "email": "support@trilox.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trilox/n8n-nodes-trilox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trilox/n8n-nodes-trilox/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && npm run copy:files",
+    "copy:files": "copyfiles \"nodes/**/*.{png,svg}\" dist/",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "scan": "npx @n8n/scan-community-package n8n-nodes-trilox",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/TriloxApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Trilox/Trilox.node.js",
+      "dist/nodes/Trilox/TriloxTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "copyfiles": "^2.4.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
