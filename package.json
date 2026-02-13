@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-trilox",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community nodes for Trilox - The first n8n chatbot inbox with human takeover. Monitor conversations, take control from bots, and reply as a human.",
   "keywords": [
     "n8n-community-node-package",
