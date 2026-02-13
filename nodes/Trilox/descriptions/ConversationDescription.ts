@@ -77,12 +77,12 @@ export const conversationFields: INodeProperties[] = [
 			{
 				name: 'Bot',
 				value: 'bot',
-				description: 'Automated bot response (1 token)',
+				description: 'Automated bot response',
 			},
 			{
 				name: 'Visitor',
 				value: 'visitor',
-				description: 'Customer/visitor message (1 token)',
+				description: 'Customer/visitor message',
 			},
 		],
 		displayOptions: {
