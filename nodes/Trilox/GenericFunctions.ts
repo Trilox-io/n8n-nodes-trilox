@@ -17,15 +17,17 @@ export async function triloxApiRequest(
 	const credentials = await this.getCredentials('triloxApi');
 	const baseUrl = credentials.baseUrl as string;
 
+	const hasBody = Object.keys(body).length > 0;
+
 	const options: IHttpRequestOptions = {
 		method,
 		url: `${baseUrl}${endpoint}`,
 		headers: {
 			'Authorization': `Bearer ${credentials.apiKey}`,
-			'Content-Type': 'application/json',
+			...(hasBody && { 'Content-Type': 'application/json' }),
 		},
 		qs,
-		body,
+		...(hasBody && { body }),
 		json: true,
 	};
 
